@@ -4,10 +4,14 @@ logging:
 spring:
   security:
     oauth2:
+
       authorizationserver:
         client:
+
           oidc-client:
+            require-proof-key: false
             registration:
+
               client-id: "spring"
               client-secret: "{noop}spring"
               client-authentication-methods:
